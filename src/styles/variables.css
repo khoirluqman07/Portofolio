@@ -42,17 +42,17 @@
   --color-mist-gray: #D8DAD5;
   --color-mist-light: #E7E9E5;
 
-  /* Semantic Theme Mappings (Default: Light Raw Limestone) */
-  --bg-canvas: var(--color-raw-limestone);
-  --bg-surface: var(--color-limestone-light);
-  --bg-surface-elevated: #FFFFFF;
-  --bg-surface-sunken: var(--color-limestone-dim);
+  /* Semantic Theme Mappings (Biophilic Panoramic Base) */
+  --bg-canvas: rgba(244, 243, 239, 0.45);
+  --bg-surface: rgba(250, 249, 246, 0.84);
+  --bg-surface-elevated: rgba(255, 255, 255, 0.94);
+  --bg-surface-sunken: rgba(236, 234, 228, 0.80);
   --text-primary: var(--color-charcoal-slate);
   --text-secondary: var(--color-slate-secondary);
   --text-muted: var(--color-slate-muted);
-  --border-hairline: 1px solid rgba(26, 28, 25, 0.12);
-  --border-strong: 1px solid rgba(26, 28, 25, 0.28);
-  --border-faint: 1px solid rgba(26, 28, 25, 0.06);
+  --border-hairline: 1px solid rgba(26, 28, 25, 0.14);
+  --border-strong: 1px solid rgba(26, 28, 25, 0.32);
+  --border-faint: 1px solid rgba(26, 28, 25, 0.08);
   --accent-primary: var(--color-botanical-sage);
   --accent-secondary: var(--color-warm-sand);
   --accent-tint: var(--color-sage-tint);
@@ -132,27 +132,4 @@
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-full: 9999px;
-}
-
-/* Dark Palette Overrides (Obsidian Moss Mode) */
-[data-theme="dark"] {
-  --bg-canvas: var(--color-obsidian-moss);
-  --bg-surface: var(--color-obsidian-surface);
-  --bg-surface-elevated: var(--color-obsidian-card);
-  --bg-surface-sunken: #070908;
-  --text-primary: #F4F3EF;
-  --text-secondary: #C8CCC5;
-  --text-muted: #8E948B;
-  --border-hairline: 1px solid rgba(244, 243, 239, 0.12);
-  --border-strong: 1px solid rgba(244, 243, 239, 0.28);
-  --border-faint: 1px solid rgba(244, 243, 239, 0.05);
-  --accent-primary: #75927A;
-  --accent-secondary: var(--color-warm-sand);
-  --accent-tint: rgba(117, 146, 122, 0.14);
-  --badge-bg: rgba(117, 146, 122, 0.18);
-  --badge-text: #B4CEB8;
-  --grid-line-color: rgba(244, 243, 239, 0.035);
-  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.35);
-  --elevation-2: 0 4px 8px rgba(0, 0, 0, 0.45);
-  --elevation-3: 0 12px 24px -4px rgba(0, 0, 0, 0.6);
 }

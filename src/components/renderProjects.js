@@ -77,7 +77,7 @@ export function renderProjects(data) {
         ${projects.items
           .map(
             (proj) => `
-          <article class="project-architectural-card" data-stagger data-velocity-skew>
+          <article class="project-architectural-card" data-stagger>
             <div class="project-details-panel">
               <div>
                 <div class="project-card-meta">

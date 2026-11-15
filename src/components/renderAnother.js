@@ -84,9 +84,9 @@ export function renderAnother(data) {
             Terbuka untuk diskusi arsitektur sistem, peran Principal Fullstack, rekacipta interaktif WebGL, atau riset komputasional bersama ITESA Muhammadiyah Semarang.
           </p>
 
-          <button id="copy-email-btn" class="contact-quick-pill" data-email="${meta.socials[2].handle}" data-cursor-target>
+          <button id="copy-email-btn" class="contact-quick-pill" data-email="khoirluqman07@gmail.com" data-cursor-target>
             <span>✉</span>
-            <span>${meta.socials[2].handle}</span>
+            <span>khoirluqman07@gmail.com</span>
             <span style="opacity: 0.5;">[COPY]</span>
             <span id="copy-toast" class="copy-feedback-toast">COPIED TO CLIPBOARD</span>
           </button>

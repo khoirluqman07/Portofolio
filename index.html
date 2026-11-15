@@ -27,6 +27,18 @@
 </head>
 
 <body>
+  <!-- Atmospheric Multi-Layer Biophilic Panoramic Parallax Stack (Google Antigravity Scroller) -->
+  <div class="biophilic-panoramic-bg" aria-hidden="true">
+    <div class="panoramic-horizon-layer active" data-horizon="alps" data-biome="01 // ALPS SUMMIT & SPRING FLORA" style="background-image: url('./src/assets/images/landscape-alps.jpg');"></div>
+    <div class="panoramic-horizon-layer" data-horizon="tuscany" data-biome="02 // TUSCANY TECTONIC HILLS" style="background-image: url('./src/assets/images/landscape-tuscany.jpg');"></div>
+    <div class="panoramic-horizon-layer" data-horizon="steppe" data-biome="03 // ENDLESS GREEN STEPPE" style="background-image: url('./src/assets/images/landscape-steppe.jpg');"></div>
+    <div class="panoramic-horizon-layer" data-horizon="poppy" data-biome="04 // POPPY RIDGE & CYPRESS" style="background-image: url('./src/assets/images/landscape-poppy.jpg');"></div>
+    <div class="panoramic-scrim-layer"></div>
+  </div>
+
+  <!-- Abstract Biophilic Fluid Mesh Canvas (Google Antigravity Generative Waveforms) -->
+  <canvas id="antigravity-mesh-canvas" class="antigravity-mesh-canvas" aria-hidden="true"></canvas>
+
   <!-- Precision Scroll Progress Bar -->
   <div class="scroll-progress-bar" aria-hidden="true"></div>
 
@@ -46,55 +58,34 @@
     <div class="grid-guide-col"></div>
   </div>
 
-  <!-- Fixed Architectural Header & Telemetry Navigation -->
+  <!-- Minimalist Architectural Floating Navigation Header -->
   <header class="architectural-header" role="banner">
     <div class="header-container">
-      <!-- Monogram & Identity -->
+      <!-- Minimalist Monogram & Pulse -->
       <a href="#welcome" class="header-branding" data-cursor-target>
         <span class="brand-monogram">MKL</span>
-        <span class="brand-callsign">// ARCH.01</span>
+        <span class="status-pulse-dot" aria-hidden="true"></span>
       </a>
 
-      <!-- Real-time Telemetry & Global Geo-Nodes -->
-      <div class="header-telemetry" aria-label="System Telemetry">
-        <div class="telemetry-item">
-          <span class="status-pulse-dot" aria-hidden="true"></span>
-          <span>SYS.OP // NOMINAL</span>
-        </div>
-        <div class="telemetry-item telemetry-secondary">
-          <span>SRG/BKS [6.9667°S]</span>
-        </div>
-        <div class="telemetry-item">
-          <span id="live-clock">--:--:-- WIB [GMT+7]</span>
-        </div>
-      </div>
+      <!-- Centered Editorial Navigation Links -->
+      <nav class="header-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#welcome" class="nav-link active" data-cursor-target>Welcome</a></li>
+          <li><a href="#about" class="nav-link" data-cursor-target>About</a></li>
+          <li><a href="#skills" class="nav-link" data-cursor-target>Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-cursor-target>Projects</a></li>
+          <li><a href="#another" class="nav-link" data-cursor-target>Contact</a></li>
+        </ul>
+      </nav>
 
-      <!-- Quick-jump Navigation & Controls -->
-      <div class="header-nav">
-        <nav aria-label="Main Navigation">
-          <ul class="nav-links">
-            <li><a href="#welcome" class="nav-link active" data-cursor-target>01.WEL</a></li>
-            <li><a href="#about" class="nav-link" data-cursor-target>02.ABT</a></li>
-            <li><a href="#skills" class="nav-link" data-cursor-target>03.SKL</a></li>
-            <li><a href="#projects" class="nav-link" data-cursor-target>04.PRJ</a></li>
-            <li><a href="#another" class="nav-link" data-cursor-target>05.ANT</a></li>
-          </ul>
-        </nav>
+      <!-- Minimal Controls: Live Time & Mobile Menu Toggle -->
+      <div class="header-actions">
+        <span id="live-clock" class="header-clock">--:-- WIB</span>
 
-        <div class="header-actions">
-          <!-- Tactile Theme Mode Switcher -->
-          <button id="theme-toggle-btn" class="tactile-btn" aria-label="Toggle Obsidian / Limestone Theme"
-            data-cursor-target>
-            <span id="theme-icon">☾</span>
-            <span id="theme-label" class="telemetry-secondary">Obsidian</span>
-          </button>
-
-          <!-- Mobile Navigation Toggle -->
-          <button id="mobile-nav-toggle" class="mobile-nav-toggle-btn tactile-btn" aria-label="Toggle Menu"
-            data-cursor-target>
-            <span id="mobile-menu-label">MENU</span>
-          </button>
-        </div>
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle-btn minimal-icon-btn" aria-label="Toggle Menu" data-cursor-target>
+          <span id="mobile-menu-label">☰</span>
+        </button>
       </div>
     </div>
   </header>
@@ -102,11 +93,11 @@
   <!-- Mobile Navigation Overlay (Visible on small screens) -->
   <div id="mobile-nav-overlay" class="mobile-nav-overlay" aria-hidden="true">
     <ul class="mobile-nav-list">
-      <li><a href="#welcome" class="mobile-nav-link" data-cursor-target><span>01</span> Welcome</a></li>
-      <li><a href="#about" class="mobile-nav-link" data-cursor-target><span>02</span> Manifesto</a></li>
-      <li><a href="#skills" class="mobile-nav-link" data-cursor-target><span>03</span> Architecture</a></li>
-      <li><a href="#projects" class="mobile-nav-link" data-cursor-target><span>04</span> Selected Works</a></li>
-      <li><a href="#another" class="mobile-nav-link" data-cursor-target><span>05</span> Garden & Dispatch</a></li>
+      <li><a href="#welcome" class="mobile-nav-link" data-cursor-target>Welcome</a></li>
+      <li><a href="#about" class="mobile-nav-link" data-cursor-target>About</a></li>
+      <li><a href="#skills" class="mobile-nav-link" data-cursor-target>Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link" data-cursor-target>Projects</a></li>
+      <li><a href="#another" class="mobile-nav-link" data-cursor-target>Contact</a></li>
     </ul>
     <div
       style="font-family: var(--font-mono); font-size: var(--font-mono-tag); color: var(--text-muted); border-top: var(--border-hairline); padding-top: var(--space-md);">

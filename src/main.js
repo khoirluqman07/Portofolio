@@ -29,22 +29,24 @@ class PortfolioApp {
   }
 
   init() {
+    // Enforce Raw Limestone Light Theme Permanently
+    localStorage.removeItem('portfolio-theme');
+    document.documentElement.setAttribute('data-theme', 'light');
+
     this.renderDOM();
     this.initParallaxAndObserver();
     this.initLiveClock();
-    this.initThemeToggle();
     this.initAudioSynthesizer();
     this.initClipboard();
     this.initSmoothNavLinks();
     this.initSystemDrawer();
     this.initMobileNav();
-    this.initKineticTopographyCanvas();
   }
 
   renderDOM() {
     if (!this.appContainer) return;
 
-    // Render modular components sequentially
+    // Render modular components sequentially across the continuous parallax backdrop
     const html = [
       renderWelcome(portfolioData),
       renderAbout(portfolioData),
@@ -75,45 +77,14 @@ class PortfolioApp {
         timeZone: 'Asia/Jakarta',
         hour: '2-digit',
         minute: '2-digit',
-        second: '2-digit',
         hour12: false
       };
       const timeStr = new Intl.DateTimeFormat('en-GB', options).format(now);
-      clockEl.textContent = `${timeStr} WIB [GMT+7]`;
+      clockEl.textContent = `${timeStr} WIB`;
     };
 
     updateClock();
     setInterval(updateClock, 1000);
-  }
-
-  initThemeToggle() {
-    const themeBtn = document.getElementById('theme-toggle-btn');
-    const themeIcon = document.getElementById('theme-icon');
-    const themeLabel = document.getElementById('theme-label');
-
-    const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-    this.updateThemeButtonState(savedTheme, themeIcon, themeLabel);
-
-    if (themeBtn) {
-      themeBtn.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('portfolio-theme', newTheme);
-        this.updateThemeButtonState(newTheme, themeIcon, themeLabel);
-      });
-    }
-  }
-
-  updateThemeButtonState(theme, iconEl, labelEl) {
-    if (theme === 'dark') {
-      if (iconEl) iconEl.textContent = '☼';
-      if (labelEl) labelEl.textContent = 'Limestone';
-    } else {
-      if (iconEl) iconEl.textContent = '☾';
-      if (labelEl) labelEl.textContent = 'Obsidian';
-    }
   }
 
   initAudioSynthesizer() {
@@ -289,7 +260,11 @@ class PortfolioApp {
         const targetEl = document.querySelector(targetId);
         if (targetEl) {
           e.preventDefault();
-          targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          if (this.parallax) {
+            this.parallax.scrollTo(targetEl.offsetTop);
+          } else {
+            targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         }
       });
     });
@@ -529,78 +504,6 @@ class PortfolioApp {
         if (label) label.textContent = 'MENU';
       });
     });
-  }
-
-  /* ==========================================================================
-     KINETIC BIOPHILIC TOPOGRAPHY CANVAS
-     ========================================================================== */
-  initKineticTopographyCanvas() {
-    const canvas = document.getElementById('kinetic-topo-canvas');
-    if (!canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    let width = (canvas.width = 580);
-    let height = (canvas.height = 580);
-    let time = 0;
-
-    let mouseX = width / 2;
-    let mouseY = height / 2;
-
-    window.addEventListener('mousemove', (e) => {
-      const rect = canvas.getBoundingClientRect();
-      mouseX = e.clientX - rect.left;
-      mouseY = e.clientY - rect.top;
-    }, { passive: true });
-
-    const rings = 7;
-    const baseRadius = 60;
-    const step = 28;
-
-    const render = () => {
-      ctx.clearRect(0, 0, width, height);
-
-      time += 0.012;
-      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-      const strokeColor = isDark ? 'rgba(117, 146, 122, 0.45)' : 'rgba(74, 93, 78, 0.4)';
-
-      ctx.strokeStyle = strokeColor;
-      ctx.lineWidth = 1;
-
-      for (let r = 0; r < rings; r++) {
-        ctx.beginPath();
-        const currentR = baseRadius + r * step;
-        const points = 60;
-
-        for (let i = 0; i <= points; i++) {
-          const angle = (i / points) * Math.PI * 2;
-          const noise =
-            Math.sin(angle * 3 + time + r * 0.4) * 8 +
-            Math.cos(angle * 5 - time * 0.8) * 5;
-
-          // Proximity to mouse
-          const px = width / 2 + Math.cos(angle) * (currentR + noise);
-          const py = height / 2 + Math.sin(angle) * (currentR + noise);
-
-          const dist = Math.hypot(px - mouseX, py - mouseY);
-          const repel = Math.max(0, (140 - dist) * 0.12);
-
-          const finalX = px + Math.cos(angle) * repel;
-          const finalY = py + Math.sin(angle) * repel;
-
-          if (i === 0) {
-            ctx.moveTo(finalX, finalY);
-          } else {
-            ctx.lineTo(finalX, finalY);
-          }
-        }
-        ctx.closePath();
-        ctx.stroke();
-      }
-
-      requestAnimationFrame(render);
-    };
-
-    render();
   }
 }
 

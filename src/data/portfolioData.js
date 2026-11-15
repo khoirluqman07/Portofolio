@@ -12,29 +12,35 @@ export const portfolioData = {
     shortName: "Luqman",
     callsign: "MKL // ARCH.01",
     role: "Principal Fullstack Developer & Creative Technologist",
-    subRole: "Design Systems Architect • Spatial Web Engineer",
+    subRole: "Software Engineering • Media & Creative Technologist",
     institution: {
       name: "ITESA Muhammadiyah Semarang",
       fullName: "Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang",
-      status: "Undergraduate Scholar // Computational Systems & Applied Tech",
-      period: "2023 — Present"
+      status: "Undergraduate Student // Software Engineering",
+      period: "2025 — Sekarang"
     },
     geoNodes: [
       {
-        city: "Semarang",
-        region: "Central Java",
+        city: "Jakarta",
+        region: "DKI Jakarta",
         country: "ID",
-        coordinates: "6.9667° S, 110.4167° E",
-        type: "Primary Academic & Innovation Node",
-        elevation: "82m ASL"
+        type: "Tempat Lahir // Origin Node",
       },
       {
         city: "Bekasi",
-        region: "West Java",
+        region: "Jawa Barat",
         country: "ID",
         coordinates: "6.2383° S, 106.9756° E",
-        type: "Metropolitan Lab & Engineering Hub",
+        type: "Kota Tumbuh Besar // Hometown Node",
         elevation: "18m ASL"
+      },
+      {
+        city: "Semarang",
+        region: "Jawa Tengah",
+        country: "ID",
+        coordinates: "6.9667° S, 110.4167° E",
+        type: "Pusat Pendidikan // ITESA Base",
+        elevation: "82m ASL"
       }
     ],
     availability: {
@@ -44,21 +50,21 @@ export const portfolioData = {
       timezone: "GMT+7 (Asia/Jakarta)"
     },
     socials: [
-      { name: "GitHub", handle: "@khoirluqman", url: "https://github.com" },
-      { name: "LinkedIn", handle: "in/khoir-luqman", url: "https://linkedin.com" },
-      { name: "Terminal / Email", handle: "khoir.luqman.arch@gmail.com", url: "mailto:khoir.luqman.arch@gmail.com" },
-      { name: "Substack / Monograph", handle: "luqman.craft", url: "https://substack.com" }
+      { name: "GitHub", handle: "@khoirluqman07", url: "https://github.com/khoirluqman07" },
+      { name: "Instagram", handle: "@khoirluqmann", url: "https://www.instagram.com/khoirluqmann/" },
+      { name: "Terminal / Email", handle: "khoirluqman07@gmail.com", url: "mailto:khoirluqman07@gmail.com" },
+      { name: "LinkedIn", handle: "in/khoir-luqman", url: "https://linkedin.com" }
     ]
   },
 
   welcome: {
-    systemTag: "SYS.01 // RECONSTRUCTION",
-    architecturalPreamble: "BIOPHILIC ARCHITECTURAL MINIMALISM × MATERIAL EXPRESSIVE",
-    headlineLine1: "HARMONIZING",
-    headlineLine2: "ORGANIC NATURE",
-    headlineLine3: "WITH RIGID CODE.",
+    systemTag: "Introduction",
+    architecturalPreamble: "Hello Guys",
+    headlineLine1: "Muhammad",
+    headlineLine2: "Khoir",
+    headlineLine3: "Luqman.",
     leadParagraph:
-      "Saya adalah Muhammad Khoir Luqman, Principal Fullstack Developer & Creative Technologist yang berbasis di Semarang & Bekasi. Berfokus pada sintesis ruang digital bernapas — memadukan keteraturan arsitektural minimalis, prinsip gerak Google Material Expressive, dan arsitektur perangkat lunak skala tinggi.",
+      "Saya Muhammad Khoir Luqman, Seorang Principal Fullstack Developer & Creative Technologist yang berbasis di Semarang & Bekasi. Berfokus pada sintesis ruang digital bernapas — memadukan keteraturan arsitektural minimalis, prinsip gerak Google Material Expressive, dan arsitektur perangkat lunak skala tinggi.",
     telemetry: [
       { label: "ACADEMIC BASE", value: "ITESA Muhammadiyah Semarang" },
       { label: "COORDINATES", value: "6.9667° S, 110.4167° E" },
@@ -69,53 +75,60 @@ export const portfolioData = {
 
   about: {
     sectionIndex: "02",
-    sectionTitle: "ARCHITECTURAL MANIFESTO",
-    sectionSub: "PHILOSOPHY // PEDAGOGY // RESILIENCE",
-    ethosTitle: "Mereduksi Kebisingan, Mengembalikan Ruang Bernapas",
+    sectionTitle: "TENTANG SAYA // ABOUT",
+    sectionSub: "JAKARTA • BEKASI • SEMARANG // SOFTWARE ENGINEERING",
+    ethosTitle: "Rekayasa Perangkat Lunak, Disiplin Fisik, dan Eksplorasi Media Kreatif",
     ethosParagraphs: [
-      "Di tengah lanskap digital yang penuh dengan gradien artifisial hiper-jenuh dan antarmuka SaaS yang seragam, saya mengambil jalur berlawanan: Biophilic Architectural Minimalism. Kami memperlakukan layar bukan sebagai kanvas datar yang statis, melainkan sebagai ruang tektonik arsitektur di mana cahaya, proporsi grid 1px, tipografi editorial, dan tekstur alami saling berinteraksi.",
-      "Sebagai mahasiswa di ITESA Muhammadiyah Semarang, latar belakang statistika komputasional dan teknologi bisnis membentuk ketajaman analisis saya. Kode yang saya tulis bukan sekadar untuk merender piksel, melainkan membangun infrastruktur data terukur, bebas dari bloatware, dan memiliki ketahanan struktural layaknya arsitektur batu kapur alami."
+      "Saya lahir di Jakarta dan tumbuh besar di Bekasi, lalu saat ini sedang melanjutkan langkah menempuh pendidikan tinggi di Semarang. Sebagai seorang mahasiswa di ITESA Muhammadiyah Semarang dengan latar belakang Software Engineering (Rekayasa Perangkat Lunak), saya memadukan logika komputasi terstruktur dengan semangat untuk membangun karya teknologi yang bersih, modular, dan bermanfaat nyata.",
+      "Keseimbangan hidup bagi saya dibangun dari aktivitas fisik dan kreativitas visual. Saya memiliki banyak hobi di bidang olahraga seperti futsal, sepak bola, lari, serta berbagai latihan fisik lainnya. Tak hanya olahraga, saya juga memiliki antusiasme mendalam pada dunia media: mendokumentasikan momen di sekitar, melakukan modifikasi serta proses editing kreatif, lalu membagikannya melalui media sosial di Instagram <a href=\"https://www.instagram.com/khoirluqmann/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"about-inline-link\" data-cursor-target>@khoirluqmann ↗</a>."
     ],
     pillars: [
       {
         code: "PIL-01",
-        title: "Tectonic Grid Structure",
-        desc: "Sistem grid presisi 1px hairline border dengan proporsi matematis rasio emas dan negative space lapang, menghilangkan dekorasi semu."
+        title: "Software Engineering",
+        desc: "Mendalami rekayasa perangkat lunak, algoritma terstruktur, dan arsitektur web modern di ITESA Muhammadiyah Semarang untuk menciptakan sistem yang efisien dan handal."
       },
       {
         code: "PIL-02",
-        title: "Biophilic Materiality",
-        desc: "Palet warna yang diadaptasi dari alam nyata: Raw Limestone (#F4F3EF), Deep Obsidian Moss (#0D110E), dan Botanical Sage (#4A5D4E) dengan sentuhan grain subtil."
+        title: "Physical Fitness & Sports",
+        desc: "Menjaga stamina, fokus, dan ketahanan mental melalui olahraga rutin: futsal, sepak bola, lari, serta latihan fisik disiplin."
       },
       {
         code: "PIL-03",
-        title: "Material Expressive Motion",
-        desc: "Kurva fisika cubic-bezier(0.2, 0, 0, 1) Google Material 3 dan velocity interpolation yang memberikan sensasi gravitasi organik pada tiap interaksi."
+        title: "Media & Creative Editing",
+        desc: "Hobi mendokumentasikan visual sekitar, meracik proses editing kreatif, dan mengunggah karya dokumentasi di media sosial."
       },
       {
         code: "PIL-04",
-        title: "Algorithmic Precision",
-        desc: "Kematangan backend microservices, caching multi-tier, dan pemrosesan data asinkron yang menjamin keandalan sistem berskala enterprise."
+        title: "Tri-City Roots",
+        desc: "Lahir di Jakarta, bertumbuh di Bekasi, dan menimba ilmu di Semarang — membentuk kepribadian yang adaptif, tangguh, dan berpikiran terbuka."
       }
     ],
+    timelineTitle: "Riwayat Pendidikan",
     timeline: [
       {
-        year: "2024 — PRESENT",
-        title: "Principal Creative Technologist & Systems Architect",
-        place: "Independent Practice / Client Commissions",
-        description: "Merancang arsitektur sistem skala penuh, headless design systems, dan visualisasi spasial berbasis WebGL/Canvas untuk klien global."
+        year: "2013 — 2019",
+        title: "Sekolah Dasar",
+        place: "SD Negeri Wanasari 01",
+        description: "Menyelesaikan pendidikan dasar formal di Cibitung, Kabupaten Bekasi, menumbuhkan rasa ingin tahu dan disiplin awal dalam belajar."
       },
       {
-        year: "2023 — PRESENT",
-        title: "Applied Computer Science & Tech Studies",
+        year: "2019 — 2022",
+        title: "Sekolah Menengah Pertama",
+        place: "SMP Negeri 05 Cibitung",
+        description: "Menyelesaikan pendidikan menengah pertama di Cibitung, Kabupaten Bekasi, membangun fondasi minat di bidang teknologi, sains, serta keaktifan dalam kegiatan olahraga fisik."
+      },
+      {
+        year: "2022 — 2025",
+        title: "Teknik Instalasi Tenaga Listrik (TITL)",
+        place: "SMK Negeri 03 Cikarang Barat",
+        description: "Sekolah Menengah Kejuruan dengan konsentrasi Teknik Instalasi Tenaga Listrik (TITL). Mendalami sistem kelistrikan, logika kontrol rangkaian, dan otomasi industri."
+      },
+      {
+        year: "2025 — SEKARANG",
+        title: "Software Engineering (S1)",
         place: "ITESA Muhammadiyah Semarang",
-        description: "Mendalami statistika komputasional, struktur algoritma lanjut, dan rekayasa perangkat lunak berorientasi data."
-      },
-      {
-        year: "2022 — 2023",
-        title: "Lead Frontend Systems Engineer",
-        place: "Collaborative Labs // Bekasi & Semarang",
-        description: "Mengembangkan prototipe antarmuka berkinerja tinggi, modular design tokens, dan optimasi core web vitals sub-100ms."
+        description: "Institut Teknologi Statistika dan Bisnis Muhammadiyah Semarang. Menempuh studi sarjana dengan fokus pada rekayasa perangkat lunak (Software Engineering), arsitektur web modern, dan sistem komputasi terapan."
       }
     ]
   },
@@ -160,7 +173,7 @@ export const portfolioData = {
         colorAccent: "var(--color-botanical-sage)",
         nodes: [
           { name: "Material 3 Expressive Curves", spec: "cubic-bezier(0.2, 0, 0, 1), Elevation", tag: "MOTION" },
-          { name: "Smooth Lerp Parallax Physics", spec: "requestAnimationFrame, Velocity Skew", tag: "PHYSICS" },
+          { name: "Smooth Lerp Parallax Physics", spec: "requestAnimationFrame, Inertia Dampening", tag: "PHYSICS" },
           { name: "Canvas & Generative Topography", spec: "Organic Vector Fields, SVG Noise", tag: "CREATIVE" },
           { name: "Architectural Grid Systems", spec: "Subpixel Hairline Borders, Clamp Scales", tag: "LAYOUT" },
           { name: "Headless Design Tokens", spec: "CSS Variables, Semantic Color Spaces", tag: "SYSTEM" }
@@ -212,7 +225,7 @@ export const portfolioData = {
         },
         links: {
           preview: "https://aura-bios.demo.internal",
-          code: "https://github.com/khoirluqman/aura-bios"
+          code: "https://github.com/khoirluqman07/aura-bios"
         },
         accent: "var(--color-botanical-sage)",
         blueprintSvg: "topographic",
@@ -263,7 +276,7 @@ export function computeCircadianTone(lat, lon, epoch) {
         },
         links: {
           preview: "https://statistika-os.itesa.ac.id",
-          code: "https://github.com/khoirluqman/statistika-os"
+          code: "https://github.com/khoirluqman07/statistika-os"
         },
         accent: "var(--color-warm-sand)",
         blueprintSvg: "matrix",
@@ -313,7 +326,7 @@ func QueryAcademicAggregates(ctx context.Context, pool *pgxpool.Pool, cohortID s
         },
         links: {
           preview: "https://terra.telemetry.io",
-          code: "https://github.com/khoirluqman/terra-telemetry"
+          code: "https://github.com/khoirluqman07/terra-telemetry"
         },
         accent: "var(--color-botanical-sage)",
         blueprintSvg: "contour",
@@ -364,7 +377,7 @@ export function evaluateSoilHydration(fieldReading) {
         },
         links: {
           preview: "https://synthesis-tokens.dev",
-          code: "https://github.com/khoirluqman/synthesis-tokens"
+          code: "https://github.com/khoirluqman07/synthesis-tokens"
         },
         accent: "var(--color-charcoal-slate)",
         blueprintSvg: "geometry",
@@ -430,8 +443,8 @@ export function compileBezierCurve(tokens) {
           <p>Banyak pengembang mengimpor library scroll berbobot ratusan kilobyte hanya untuk mendapatkan efek gerak halus. Hal ini mengorbankan metrik INP (Interaction to Next Paint) dan membebani memori browser.</p>
           <h4>2. Matematika Lerp yang Elegan</h4>
           <p>Formula lerp(start, end, factor) = start + (end - start) * factor yang dijalankan dalam loop requestAnimationFrame dengan nilai factor antara 0.08 hingga 0.1 memberikan kehalusan 60–120 FPS tanpa overhead.</p>
-          <h4>3. Velocity Skew Dinamis</h4>
-          <p>Dengan menghitung delta scroll secara real-time, kita dapat menerapkan rotasi atau kemiringan mikro (skewY hingga 2.5deg) yang merefleksikan kecepatan scroll pengguna, memberikan umpan balik taktil yang memuaskan.</p>
+          <h4>3. Linear Inertia Dampening</h4>
+          <p>Dengan menghitung delta scroll secara real-time, kita menerapkan peredaman inersia subpixel yang stabil dan presisi tanpa distorsi kemiringan, memberikan umpan balik taktil yang memuaskan dan tenang.</p>
         `
       },
       {
