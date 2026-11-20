@@ -14,7 +14,7 @@ export function renderAnother(data) {
       </div>
 
       <div class="another-intro" data-stagger>
-        <h2 class="font-display">Digital Garden & Field Notes</h2>
+        <h2 class="font-display">${another.gardenHeading || "Catatan & Refleksi Pengalaman"}</h2>
         <p>${another.description}</p>
       </div>
 
@@ -33,8 +33,8 @@ export function renderAnother(data) {
               <p class="note-excerpt">${note.excerpt}</p>
             </div>
             <div style="margin-top: var(--space-md); display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: var(--font-mono-micro); color: var(--text-muted);">
-              <span>READ TIME: ${note.readTime}</span>
-              <span style="color: var(--accent-primary);">INSPECT MONOGRAPH ↗</span>
+              <span>WAKTU BACA: ${note.readTime}</span>
+              <span style="color: var(--accent-primary);">BACA CATATAN ↗</span>
             </div>
           </div>
         `
@@ -77,11 +77,11 @@ export function renderAnother(data) {
       <div class="transmission-terminal" data-stagger>
         <div class="transmission-info">
           <div style="font-family: var(--font-mono); font-size: var(--font-mono-tag); color: var(--accent-primary); margin-bottom: 0.5rem;">
-            COMMUNICATION DISPATCH // PROTOCOL: ENCRYPTED
+            DOMISILI: SEMARANG / BEKASI // INDONESIA
           </div>
-          <h3 class="font-display">Initiate Collaboration</h3>
+          <h3 class="font-display">${another.contactTitle || "Terbuka untuk Peluang & Kolaborasi"}</h3>
           <p>
-            Terbuka untuk diskusi arsitektur sistem, peran Principal Fullstack, rekacipta interaktif WebGL, atau riset komputasional bersama ITESA Muhammadiyah Semarang.
+            ${another.contactSubtitle || "Punya ide proyek pengembangan web, peluang magang, atau sekadar ingin berdiskusi seputar rekayasa perangkat lunak dan eksplorasi kreatif? Jangan ragu untuk menghubungi saya, saya selalu antusias menyambut tantangan dan pengalaman baru."}
           </p>
 
           <button id="copy-email-btn" class="contact-quick-pill" data-email="khoirluqman07@gmail.com" data-cursor-target>

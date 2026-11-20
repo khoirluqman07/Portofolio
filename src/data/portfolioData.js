@@ -51,9 +51,9 @@ export const portfolioData = {
     },
     socials: [
       { name: "GitHub", handle: "@khoirluqman07", url: "https://github.com/khoirluqman07" },
+      { name: "Email", handle: "khoirluqman07@gmail.com", url: "mailto:khoirluqman07@gmail.com" },
       { name: "Instagram", handle: "@khoirluqmann", url: "https://www.instagram.com/khoirluqmann/" },
-      { name: "Terminal / Email", handle: "khoirluqman07@gmail.com", url: "mailto:khoirluqman07@gmail.com" },
-      { name: "LinkedIn", handle: "in/khoir-luqman", url: "https://linkedin.com" }
+      { name: "Threads", handle: "@khoirluqmann", url: "https://www.threads.net/@khoirluqmann" }
     ]
   },
 
@@ -265,60 +265,65 @@ function calculateResult(expression) {
 
   another: {
     sectionIndex: "05",
-    sectionTitle: "DIGITAL GARDEN & TRANSMISSION",
-    sectionSub: "LAB EXPERIMENTS // FREQUENCY SYNTH // DISPATCH",
+    sectionTitle: "HUBUNGI SAYA // CONTACT",
+    sectionSub: "DOMISILI: SEMARANG / BEKASI // INDONESIA",
+    gardenHeading: "Catatan & Refleksi Pengalaman",
+    contactTitle: "Terbuka untuk Peluang & Kolaborasi",
+    contactSubtitle:
+      "Punya ide proyek pengembangan web, peluang magang, atau sekadar ingin berdiskusi seputar rekayasa perangkat lunak dan eksplorasi kreatif? Jangan ragu untuk menghubungi saya, saya selalu antusias menyambut tantangan dan pengalaman baru.",
+    domicile: "Semarang / Bekasi, Indonesia",
     description:
-      "Arsip pemikiran, eksperimen audio-spasial, dan saluran komunikasi langsung untuk kolaborasi arsitektural.",
+      "Kumpulan tulisan ringkas seputar proses belajar rekayasa perangkat lunak, eksplorasi media visual, serta refleksi kedisiplinan dan pengalaman hidup.",
     gardenNotes: [
       {
         id: "note-01",
-        date: "OCT 2026",
-        tag: "MONOGRAPH // 01",
-        title: "Mengapa Antarmuka Modern Membutuhkan Sensasi Tektonik dan Gravitasi",
-        readTime: "6 min read",
+        date: "2025",
+        tag: "SOFTWARE // 01",
+        title: "Membangun Logika Aritmatika Bersih: Pelajaran dari Proyek Kalkulator Web",
+        readTime: "4 min read",
         excerpt:
-          "Eksplorasi mendalam tentang kejenuhan mata pengguna terhadap gradien sintetis dan bagaimana kurva Material 3 Expressive serta tekstur batu kapur alami membangkitkan ketenangan neurologis.",
+          "Refleksi perancangan logika kalkulator berbasis JavaScript murni, menangani validasi ekspresi matematis, serta pentingnya struktur kode modular di ITESA Muhammadiyah Semarang.",
         content: `
-          <h4>1. Kejenuhan Terhadap Estetika Artifisial</h4>
-          <p>Selama lima tahun terakhir, antarmuka digital dikuasai oleh gradien ungu/biru neon dan efek glassmorphism yang seragam. Ini menciptakan apa yang para arsitek sebut sebagai "visual fatigue" — kelelahan kognitif akibat rangsangan spektrum warna yang tidak pernah ditemui dalam alam biologis manusia.</p>
-          <h4>2. Sensasi Tektonik dan Bobot Fisik</h4>
-          <p>Dengan menerapkan prinsip Biophilic Architectural Minimalism, kita mengembalikan bobot tektonik pada layar. Garis 1px bukan sekadar pembatas, melainkan balok penopang struktur. Kurva gerak cubic-bezier(0.2, 0, 0, 1) Google Material 3 memberikan inersia alami — sebuah elemen tidak berhenti seketika layaknya saklar biner, melainkan memiliki perlambatan gravitasi.</p>
-          <h4>3. Ketenangan Neurologis melalui Palet Limestone</h4>
-          <p>Batu kapur (Raw Limestone) dan lumut obsidian (Obsidian Moss) memantulkan spektrum cahaya yang lebih ramah bagi retina. Menggabungkannya dengan tipografi editorial menghasilkan ruang digital yang tenang, terukur, dan menghormati fokus manusia.</p>
+          <h4>1. Fondasi Logika di ITESA Muhammadiyah Semarang</h4>
+          <p>Sebagai mahasiswa Software Engineering, tugas perancangan aplikasi kalkulator mengajarkan pentingnya ketelitian dalam alur logika. Setiap input operator dan angka harus diproses dengan urutan yang benar agar tidak menimbulkan error runtime.</p>
+          <h4>2. Validasi Ekspresi dan Penanganan Error</h4>
+          <p>Tantangan utama bukan sekadar menampilkan angka, melainkan mencegah operasi pembagian dengan nol atau pengetikan operator ganda secara berturut-turut. Menggunakan JavaScript murni melatih pemahaman mendalam tentang manipulasi string dan fungsi evaluasi yang aman.</p>
+          <h4>3. Nilai dari Kode yang Bersih dan Terbaca</h4>
+          <p>Menjaga kode tetap ringkas dan terorganisir membuat proses debugging jauh lebih mudah. Pengalaman ini menjadi bekal berharga untuk proyek rekayasa perangkat lunak berskala lebih besar ke depannya.</p>
         `
       },
       {
         id: "note-02",
-        date: "AUG 2026",
-        tag: "SYSTEM LAB // 02",
-        title: "Arsitektur Zero-Overhead: Menyingkirkan Library Raksasa untuk Lerp Scroll Murni",
-        readTime: "4 min read",
+        date: "2025",
+        tag: "CREATIVE // 02",
+        title: "Dari Dokumentasi Visual ke Desain Antarmuka: Melatih Rasa dalam Mengedit Konten",
+        readTime: "3 min read",
         excerpt:
-          "Bagaimana kalkulasi diferensial linear interpolation 40 baris kode dapat mengungguli performa library scroll 200KB pada perangkat mobile dengan refresh rate 120Hz.",
+          "Bagaimana kebiasaan mendokumentasikan lingkungan sekitar dan menyunting video untuk media sosial mengasah insting komposisi, ritme, dan detail antarmuka web.",
         content: `
-          <h4>1. Jebakan Bloatware Library Pihak Ketiga</h4>
-          <p>Banyak pengembang mengimpor library scroll berbobot ratusan kilobyte hanya untuk mendapatkan efek gerak halus. Hal ini mengorbankan metrik INP (Interaction to Next Paint) dan membebani memori browser.</p>
-          <h4>2. Matematika Lerp yang Elegan</h4>
-          <p>Formula lerp(start, end, factor) = start + (end - start) * factor yang dijalankan dalam loop requestAnimationFrame dengan nilai factor antara 0.08 hingga 0.1 memberikan kehalusan 60–120 FPS tanpa overhead.</p>
-          <h4>3. Linear Inertia Dampening</h4>
-          <p>Dengan menghitung delta scroll secara real-time, kita menerapkan peredaman inersia subpixel yang stabil dan presisi tanpa distorsi kemiringan, memberikan umpan balik taktil yang memuaskan dan tenang.</p>
+          <h4>1. Menangkap Momen di Sekitar</h4>
+          <p>Hobi mendokumentasikan momen melalui foto dan video melatih mata untuk peka terhadap pencahayaan, sudut pandang, dan detail yang sering terlewatkan. Setiap frame memiliki cerita yang ingin disampaikan.</p>
+          <h4>2. Proses Editing sebagai Latihan Komposisi</h4>
+          <p>Saat memodifikasi dan menyunting video untuk diunggah ke Instagram @khoirluqmann, saya belajar mengatur tempo dan harmoni visual. Kebiasaan ini secara langsung membantu saya ketika merancang antarmuka web, terutama dalam hal hierarki tipografi dan keselarasan jarak spasi.</p>
+          <h4>3. Menghubungkan Media dan Front-End</h4>
+          <p>Dunia teknologi dan media visual saling melengkapi. Front-end yang baik tidak hanya berfungsi secara teknis, tetapi juga memberikan kenyamanan estetika yang menyenangkan bagi penggunanya.</p>
         `
       },
       {
         id: "note-03",
-        date: "MAY 2026",
-        tag: "ACADEMIA // 03",
-        title: "Statistika Komputasional dalam Rekayasa Perangkat Lunak: Catatan dari ITESA",
-        readTime: "8 min read",
+        date: "2025",
+        tag: "REFLEKSI // 03",
+        title: "Disiplin Lapangan dan Layar: Menjaga Fokus Lewat Olahraga dan Tulisan Reflektif",
+        readTime: "3 min read",
         excerpt:
-          "Penerapan model probabilitas stokastik untuk mendeteksi bottleneck latensi pada arsitektur microservices terdistribusi.",
+          "Menghubungkan konsistensi olahraga fisik seperti futsal, sepak bola, dan lari dengan ketahanan memecahkan kode rumit, serta merangkai kalimat reflektif yang bermakna.",
         content: `
-          <h4>1. Lensa Statistik dalam Pemodelan Sistem</h4>
-          <p>Sebagai akademisi di ITESA Muhammadiyah Semarang, saya melihat rekayasa perangkat lunak tidak hanya sebagai seni menulis kode, melainkan sebagai sistem probabilitas terbuka. Latensi p99 bukanlah angka acak, melainkan hasil distribusi ekor panjang (heavy-tailed distribution).</p>
-          <h4>2. Deteksi Bottleneck Berbasis Distribusi</h4>
-          <p>Dengan menerapkan estimasi quantil dinamis menggunakan algoritma T-Digest di dalam micro-daemon, kita dapat mendeteksi degradasi performa sebelum lonjakan error 5xx terjadi pada layer aplikasi.</p>
-          <h4>3. Sintesis Sains Data dan Arsitektur UI</h4>
-          <p>Data metrik yang akurat memungkinkan antarmuka menyajikan informasi telemetri yang jujur, bukan angka persentase fiktif. Inilah fondasi arsitektur data terpusat kami.</p>
+          <h4>1. Stamina dan Ketahanan Mental</h4>
+          <p>Rutinitas olahraga seperti futsal, sepak bola, dan lari menuntut fokus dan daya tahan tinggi. Konsistensi di lapangan membentuk mental pantang menyerah saat berhadapan dengan proses debugging kode yang rumit dan tenggat waktu tugas.</p>
+          <h4>2. Kerja Sama Tim dan Komunikasi</h4>
+          <p>Olahraga beregu mengajarkan pentingnya koordinasi dan komunikasi yang efektif. Sikap saling mendukung dan memahami peran masing-masing menjadi modal utama dalam kolaborasi tim pengembang perangkat lunak.</p>
+          <h4>3. Menangkap Makna Lewat Tulisan Ringkas</h4>
+          <p>Menuliskan kutipan dan kalimat reflektif membantu menyaring intisari dari berbagai pengalaman hidup. Latihan ini juga mempertajam kemampuan merumuskan teks antarmuka yang ringkas, jelas, dan mudah dipahami oleh pengguna.</p>
         `
       }
     ],
