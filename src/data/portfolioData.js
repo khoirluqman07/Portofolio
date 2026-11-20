@@ -135,60 +135,61 @@ export const portfolioData = {
 
   skills: {
     sectionIndex: "03",
-    sectionTitle: "SYSTEMIC CAPABILITIES",
-    sectionSub: "STRUCTURAL TAXONOMY // ZERO PROGRESS BARS",
+    sectionTitle: "My Skils",
+    sectionSub: "Your Best Self",
     description:
-      "Kami menolak progress bar persentase yang arbitrari. Sebagai gantinya, kemampuan kami diklasifikasikan sebagai matriks arsitektur 4-lapisan: dari infrastruktur dasar hingga pengalaman spasial manusia.",
+      "Keahlian bukanlah titik akhir, melainkan proses yang terus ditempa. Berbekal rasa ingin tahu yang tinggi dan keberanian mencoba hal baru, saya terus memperdalam arsitektur perangkat lunak sambil mengasah kepekaan visual, narasi, dan konsistensi fisik.",
     matrixTiers: [
       {
         tierId: "TIER-01",
-        layerName: "Distributed Systems & Cloud Core",
-        concept: "Subterranean Infrastructure",
+        layerName: "Software Engineering & Web Architecture",
+        concept: "Core Systems & Web",
         colorAccent: "var(--color-botanical-sage)",
+        description: "Membangun fondasi rekayasa perangkat lunak melalui pemrograman terstruktur, perancangan basis data, dan arsitektur web modern di ITESA Muhammadiyah Semarang. Berfokus pada penulisan kode yang bersih, efisiensi logika algoritma, serta pengembangan sistem dan antarmuka yang andal bagi pengguna.",
         nodes: [
-          { name: "Distributed Microservices", spec: "Event-driven, High-Throughput", tag: "CORE" },
-          { name: "PostgreSQL & Redis Topology", spec: "Connection Pooling, Caching Grids", tag: "DATA" },
-          { name: "Docker & Container Orchestration", spec: "Multi-stage Builds, Zero-downtime", tag: "INFRA" },
-          { name: "REST, GraphQL & gRPC APIs", spec: "Strict Contract, Protocol Buffers", tag: "PROTO" },
-          { name: "Cloudflare Workers & Edge Compute", spec: "Sub-50ms Global Edge Routing", tag: "EDGE" }
+          { name: "Pemrograman Terstruktur", spec: "Clean Code dan Efisiensi Algoritma", tag: "CODE" },
+          { name: "Perancangan Basis Data", spec: "Pemodelan Relasional dan Optimasi Kueri", tag: "DATA" },
+          { name: "Arsitektur Web Modern", spec: "Struktur Komponen Modular dan Skalabel", tag: "ARCH" },
+          { name: "Sistem & Antarmuka Pengguna", spec: "Aplikasi Responsif dan Andal", tag: "SYS" }
         ]
       },
       {
         tierId: "TIER-02",
-        layerName: "Fullstack Synthesis & Engines",
-        concept: "Tectonic Middleware",
+        layerName: "Media & Creative Editing",
+        concept: "Visual & Narrative",
         colorAccent: "var(--color-warm-sand)",
+        description: "Mengasah ketajaman visual dan estetika melalui dokumentasi lingkungan sekitar serta proses penyuntingan foto dan video. Kebiasaan meracik komposisi visual dan ritme cerita ini turut memperkuat insting desain antarmuka (UI) serta perhatian terhadap detail kecil dalam pengembangan web.",
         nodes: [
-          { name: "TypeScript & ECMAScript Next", spec: "Strict Typing, AST Transformations", tag: "LANG" },
-          { name: "Node.js & Bun Runtimes", spec: "Non-blocking I/O, High Concurrency", tag: "ENGINE" },
-          { name: "Go (Golang)", spec: "Goroutines, Low-latency Micro-daemons", tag: "LANG" },
-          { name: "Python for Data & Automation", spec: "NumPy, Pandas, Telemetry Scraping", tag: "DATA" },
-          { name: "Next.js & Modern SSR Pipelines", spec: "Streaming SSR, Server Components", tag: "FRAMEWORK" }
+          { name: "Dokumentasi Visual", spec: "Perekaman Foto dan Video Lingkungan Sekitar", tag: "MEDIA" },
+          { name: "Penyuntingan Konten", spec: "Komposisi Visual dan Ritme Cerita Kreatif", tag: "EDIT" },
+          { name: "Desain Antarmuka (UI)", spec: "Insting Estetika dan Hirarki Visual", tag: "UI" },
+          { name: "Perhatian Detail Web", spec: "Presisi Layout dan Interaksi Mikro", tag: "DETAIL" }
         ]
       },
       {
         tierId: "TIER-03",
-        layerName: "Spatial UI & Material Motion",
-        concept: "Sensory Interface Layer",
+        layerName: "Quotes & Reflective Writing",
+        concept: "Micro-Copy & Writing",
         colorAccent: "var(--color-botanical-sage)",
+        description: "Merangkai kalimat dan kutipan reflektif yang menangkap makna di balik pengalaman hidup. Latihan merumuskan pesan yang ringkas namun berkesan ini membantu saya menyusun micro-copy antarmuka yang jelas, empatik, serta dokumentasi teknis yang mudah dipahami.",
         nodes: [
-          { name: "Material 3 Expressive Curves", spec: "cubic-bezier(0.2, 0, 0, 1), Elevation", tag: "MOTION" },
-          { name: "Smooth Lerp Parallax Physics", spec: "requestAnimationFrame, Inertia Dampening", tag: "PHYSICS" },
-          { name: "Canvas & Generative Topography", spec: "Organic Vector Fields, SVG Noise", tag: "CREATIVE" },
-          { name: "Architectural Grid Systems", spec: "Subpixel Hairline Borders, Clamp Scales", tag: "LAYOUT" },
-          { name: "Headless Design Tokens", spec: "CSS Variables, Semantic Color Spaces", tag: "SYSTEM" }
+          { name: "Kutipan Reflektif", spec: "Perumusan Makna Ringkas dan Berkesan", tag: "WRITE" },
+          { name: "Micro-Copy Antarmuka", spec: "Teks Jelas, Empatik, dan Kontekstual", tag: "COPY" },
+          { name: "Dokumentasi Teknis", spec: "Penyusunan Panduan Terstruktur dan Rapi", tag: "DOCS" },
+          { name: "Komunikasi Pengguna", spec: "Interaksi Bahasa yang Mudah Dipahami", tag: "COMM" }
         ]
       },
       {
         tierId: "TIER-04",
-        layerName: "Human Experience & Ecological Resilience",
-        concept: "Atmospheric Envelope",
+        layerName: "Physical Fitness & Sports",
+        concept: "Discipline & Athletics",
         colorAccent: "var(--color-charcoal-slate)",
+        description: "Menjaga stamina, fokus jangka panjang, dan ketahanan mental melalui rutinitas olahraga disiplin, mulai dari futsal, sepak bola, hingga lari. Dinamika kerja sama tim di lapangan dan konsistensi latihan menjadi modal utama dalam menghadapi proses debugging yang kompleks dan tenggat waktu proyek.",
         nodes: [
-          { name: "Universal Accessibility (WCAG AAA)", spec: "Keyboard Traversal, High Contrast", tag: "A11Y" },
-          { name: "Green Web & Carbon Efficiency", spec: "< 0.12g CO2/view, Zero Bloat", tag: "ECO" },
-          { name: "Core Web Vitals Engineering", spec: "LCP < 0.8s, INP < 50ms, CLS 0", tag: "PERF" },
-          { name: "Responsive Dynamic Viewports", spec: "Foldables, Ultra-wides, Mobile First", tag: "ADAPT" }
+          { name: "Futsal & Sepak Bola", spec: "Kerja Sama Tim dan Kecepatan Respon", tag: "SPORT" },
+          { name: "Lari", spec: "Ketahanan Mental dan Stamina Jarak Jauh", tag: "RUN" },
+          { name: "Latihan Fisik Teratur", spec: "Disiplin Rutin dan Kebugaran Tubuh", tag: "FIT" },
+          { name: "Fokus & Daya Tahan", spec: "Ketelitian Menghadapi Masalah Kompleks", tag: "FOCUS" }
         ]
       }
     ]
@@ -196,210 +197,66 @@ export const portfolioData = {
 
   projects: {
     sectionIndex: "04",
-    sectionTitle: "SELECTED WORKS",
-    sectionSub: "ARCHITECTURAL PORTFOLIO // 2024—2026",
+    sectionTitle: "My Projects",
+    sectionSub: "ARCHITECTURAL PORTFOLIO 2025—2026",
     description:
-      "Katalog karya arsitektur perangkat lunak yang dibangun dengan standar estetika galeri dan integritas rekayasa sistem.",
+      "Bagi saya setiap proyek adalah laboratorium belajar sebagai tempat mengubah konsep algoritma dan arsitektur perangkat lunak menjadi aplikasi nyata yang fungsional, teruji, dan terus disempurnakan.",
     items: [
       {
         id: "proj-01",
         code: "PRJ // 01",
-        title: "AURA.BIOS",
-        subtitle: "Biophilic Spatial Architecture Operating System",
-        year: "2026",
-        client: "Autonomous Research Lab",
-        category: "Creative Technology / WebGL",
-        role: "Lead Systems Architect & Creative Technologist",
+        title: "KALKULATOR WEB",
+        subtitle: "Aplikasi Kalkulator Web Interaktif & Presisi Aritmatika",
+        year: "2025",
+        client: "Independent Web Project",
+        category: "Web Application / Front-End Development",
+        role: "Front-End Developer & Logic Implementer",
         description:
-          "Sistem operasi antarmuka spasial berbasis browser yang mengadaptasi pencahayaan sirkadian dan tekstur biofilik real-time untuk mengurangi kelelahan kognitif pekerja jarak jauh.",
+          "Aplikasi kalkulator interaktif berbasis web yang dibangun untuk menyelesaikan operasi aritmatika dasar hingga kalkulasi bertingkat dengan cepat, akurat, dan responsif. Berfokus pada kebersihan antarmuka, penanganan error input yang andal, serta tata letak tombol yang ergonomis.",
         deliverables: [
-          "Mesin rendering topografi real-time dengan WebGL",
-          "Material 3 Expressive motion choreography",
-          "Arsitektur state terdistribusi dengan Web Workers"
+          "Implementasi logika kalkulasi aritmatika berbasis JavaScript",
+          "Antarmuka pengguna responsif dan adaptif di berbagai ukuran layar",
+          "Validasi input ekspresi matematis dan penanganan error sintaks"
         ],
-        techStack: ["TypeScript", "Canvas/WebGL", "Tailwind Tectonic", "Material Motion", "Web Audio API"],
+        techStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "Git & GitHub"],
         metrics: {
-          fps: "60 FPS Locked",
-          co2: "0.08g CO2/view",
-          bundle: "32KB Gzipped"
+          accuracy: "100% Akurat",
+          response: "< 5ms Instan",
+          bundle: "Vanilla JS Zero-Bloat"
         },
         links: {
-          preview: "https://aura-bios.demo.internal",
-          code: "https://github.com/khoirluqman07/aura-bios"
+          preview: "https://github.com/Rehanpratama/Kalkulator-Final",
+          code: "https://github.com/Rehanpratama/Kalkulator-Final"
         },
         accent: "var(--color-botanical-sage)",
-        blueprintSvg: "topographic",
+        blueprintSvg: "calculator",
         deepDive: {
-          problem: "Antarmuka kerja modern membanjiri indera visual dengan radiasi spektrum cahaya biru datar dan gerakan linier yang tidak wajar, memicu sindrom Computer Vision Fatigue.",
-          solution: "AURA.BIOS merancang ulang arsitektur tampilan dengan mengintegrasikan kalkulasi siklus sirkadian matahari lokal, noise perlin topografis bergradasi limestone, dan audio frekuensi 432Hz yang menenangkan.",
-          architectureSchema: `[ CLIENT INPUT: Lux & Coordinates ]
-                 ↓
-[ WORKER THREAD: Perlin Topography Field ]
-                 ↓
-[ WEBGL SHADER: Circadian Chromatic Matrix ]
-                 ↓
-[ 60 FPS RENDER: Organic Zero-Bloat Canvas ]`,
+          problem: "Pengguna sering membutuhkan alat hitung cepat berbasis web dengan antarmuka yang bersih, bebas dari beban library pihak ketiga yang memperlambat browser, serta memiliki tata letak tombol yang mudah digunakan di perangkat mobile maupun desktop.",
+          solution: "Membangun aplikasi kalkulator menggunakan JavaScript murni (vanilla) dengan struktur DOM yang efisien, manipulasi string ekspresi aritmatika yang aman, serta tata letak CSS Grid yang presisi dan nyaman digunakan.",
+          architectureSchema: `[ INPUT PENGGUNA: Klik Tombol / Ketikan Angka ]
+                     ↓
+[ EVENT HANDLER: Perekaman Karakter & Operator ]
+                     ↓
+[ PARSER EKSPRESI: Validasi Input & Sanitasi ]
+                     ↓
+[ ENGINE KALKULASI: Evaluasi Operasi Aritmatika ]
+                     ↓
+[ DISPLAY RENDER: Pembaruan Layar Hasil Real-Time ]`,
           benchmarks: [
-            { metric: "Frame Budget", target: "16.6ms (60 FPS)", achieved: "14.2ms nominal" },
-            { metric: "Memory Heap", target: "< 45MB", achieved: "28.4MB steady" },
-            { metric: "Carbon Intensity", target: "< 0.10g CO2", achieved: "0.08g CO2/view" }
+            { metric: "Ukuran Bundle", target: "< 15KB", achieved: "Ringan (Zero Bloat)" },
+            { metric: "Latensi Respon", target: "< 16ms", achieved: "Instan (< 5ms)" },
+            { metric: "Akurasi Perhitungan", target: "100%", achieved: "100% Teruji" }
           ],
-          sourceSnippet: `// Circadian Color Temperature Synthesizer
-export function computeCircadianTone(lat, lon, epoch) {
-  const solarAltitude = calcSolarZenith(lat, lon, epoch);
-  const kelvin = clamp(2200, 2200 + (solarAltitude * 43), 5600);
-  return kelvinToRGB(kelvin);
-}`
-        }
-      },
-      {
-        id: "proj-02",
-        code: "PRJ // 02",
-        title: "STATISTIKA.OS",
-        subtitle: "Institutional Data Intelligence & Macro Topology",
-        year: "2025",
-        client: "ITESA Academic Research Node",
-        category: "Enterprise Fullstack / Data Platform",
-        role: "Principal Backend & UI Architect",
-        description:
-          "Platform agregasi data akademik dan analitik prediktif multi-kampus dengan visualisasi matriks relasional dan enkripsi zero-trust.",
-        deliverables: [
-          "Pipeline ingestion data berbasis Go & PostgreSQL",
-          "Antarmuka analitik bertema arsitektural monokrom",
-          "Ekspor laporan editorial berstandar publikasi"
-        ],
-        techStack: ["Go", "Next.js 15", "PostgreSQL", "Docker", "Apache ECharts", "Tailwind"],
-        metrics: {
-          queryLatency: "14ms p99",
-          records: "1.2M Datapoints",
-          uptime: "99.98%"
-        },
-        links: {
-          preview: "https://statistika-os.itesa.ac.id",
-          code: "https://github.com/khoirluqman07/statistika-os"
-        },
-        accent: "var(--color-warm-sand)",
-        blueprintSvg: "matrix",
-        deepDive: {
-          problem: "Fragmentasi data riset multi-fakultas pada ITESA Muhammadiyah Semarang dengan latensi kueri agregasi lambat (>850ms) dan kurangnya standarisasi arsitektur data terbuka.",
-          solution: "Membangun sistem micro-daemon berbasis Go dengan connection pool terisolasi, indexing partisi PostgreSQL berorientasi waktu, dan antarmuka analitik editorial minim beban.",
-          architectureSchema: `[ ACADEMIC SOURCES ] → [ GO INGESTION DAEMON ]
-                                ↓
-                        [ PARTITIONED PGSQL ]
-                                ↓
-              [ REDIS CACHE GRID (TTL 300s) ]
-                                ↓
-              [ NEXT.JS SSR EDITORIAL DASHBOARD ]`,
-          benchmarks: [
-            { metric: "p99 Query Latency", target: "< 50ms", achieved: "14ms" },
-            { metric: "Concurrent Queries", target: "1,000 req/s", achieved: "2,400 req/s" },
-            { metric: "Data Ingestion Throughput", target: "10k rec/s", achieved: "28k rec/s" }
-          ],
-          sourceSnippet: `// High-Concurrency Partitioned Query Node
-func QueryAcademicAggregates(ctx context.Context, pool *pgxpool.Pool, cohortID string) (*AggResult, error) {
-    query := "SELECT metric_id, percentile_disc(0.95) WITHIN GROUP (ORDER BY latency) FROM telemetry WHERE cohort = $1"
-    return pool.QueryRow(ctx, query, cohortID)...
-}`
-        }
-      },
-      {
-        id: "proj-03",
-        code: "PRJ // 03",
-        title: "TERRA.TELEMETRY",
-        subtitle: "Microclimate IoT Node & Agricultural Soil Network",
-        year: "2025",
-        client: "Central Java Agritech Syndicate",
-        category: "Embedded & Edge Fullstack",
-        role: "Fullstack IoT & Systems Engineer",
-        description:
-          "Jaringan sensor mikroklimat cerdas untuk perkebunan presisi di Jawa Tengah. Menghubungkan node sensor fisik di lapangan ke dashboard spasial real-time.",
-        deliverables: [
-          "Edge gateway parser dengan protokol MQTT & WebSockets",
-          "Dashboard biophilic dengan peringatan dini kekeringan tanah",
-          "Offline-first PWA dengan sinkronisasi otomatis"
-        ],
-        techStack: ["Node.js", "TypeScript", "MQTT", "TimescaleDB", "Redis", "PWA Architecture"],
-        metrics: {
-          edgeLatency: "28ms Real-time",
-          sensors: "128 Active Field Nodes",
-          batteryLife: "18 Months Low Power"
-        },
-        links: {
-          preview: "https://terra.telemetry.io",
-          code: "https://github.com/khoirluqman07/terra-telemetry"
-        },
-        accent: "var(--color-botanical-sage)",
-        blueprintSvg: "contour",
-        deepDive: {
-          problem: "Petani hortikultura di area pegunungan Jawa Tengah sering menghadapi ketidakpastian anomali cuaca mikro yang menyebabkan kegagalan irigasi panen.",
-          solution: "Menyebarkan 128 sensor berdaya rendah bertenaga surya yang mentransmisikan data kelembaban tanah melalui LoRaWAN / MQTT gateway ke antarmuka peta topografi biofilik.",
-          architectureSchema: `[ 128 LORAWAN NODES ] → [ CENTRAL JAVA EDGE GATEWAY ]
-                                  ↓
-                        [ MQTT BROKER (EMQX) ]
-                                  ↓
-                        [ TIMESCALEDB PIPELINE ]
-                                  ↓
-                        [ WEBSOCKET REACTIVE MAP ]`,
-          benchmarks: [
-            { metric: "Sensor Packet Loss", target: "< 1.5%", achieved: "0.28%" },
-            { metric: "Edge Dispatch Latency", target: "< 100ms", achieved: "28ms" },
-            { metric: "Offline IndexedDB Cache", target: "100% Offline Read", achieved: "Verified" }
-          ],
-          sourceSnippet: `// Soil Moisture Anomaly Detector
-export function evaluateSoilHydration(fieldReading) {
-  const { moisture, ambientTemp, vaporDeficit } = fieldReading;
-  const moistureStressIndex = (100 - moisture) * (ambientTemp / 28.0) * vaporDeficit;
-  return { alert: moistureStressIndex > 45, level: moistureStressIndex };
-}`
-        }
-      },
-      {
-        id: "proj-04",
-        code: "PRJ // 04",
-        title: "SYNTHESIS.TOKENS",
-        subtitle: "Headless Design System & Material Expressive Compiler",
-        year: "2024",
-        client: "Open Source Collective",
-        category: "Design Engineering Tooling",
-        role: "Creator & Maintainer",
-        description:
-          "Kompiler token desain universal yang mentranslasikan variabel Figma dan kurva gerak Google Material 3 ke CSS Variables, Tailwind Plugins, dan native Swift/Kotlin.",
-        deliverables: [
-          "CLI parser dengan deteksi kontras WCAG AAA otomatis",
-          "Plugin Webpack/Vite untuk tree-shaking style tokens",
-          "Dokumentasi interaktif dengan kalkulator kurva Bezier"
-        ],
-        techStack: ["TypeScript", "Node.js", "AST Parser", "CSS Custom Properties", "Vite"],
-        metrics: {
-          downloads: "42k Monthly",
-          coverage: "100% Test Coverage",
-          size: "4.8KB Core"
-        },
-        links: {
-          preview: "https://synthesis-tokens.dev",
-          code: "https://github.com/khoirluqman07/synthesis-tokens"
-        },
-        accent: "var(--color-charcoal-slate)",
-        blueprintSvg: "geometry",
-        deepDive: {
-          problem: "Inkonsistensi antara spesifikasi kurva gerak desainer di Figma dengan implementasi frontend engineer, menyebabkan animasi web terasa kasar dan kaku.",
-          solution: "SYNTHESIS.TOKENS mengubah definisi kurva cubic-bezier dan token elevasi menjadi AST murni yang siap disuntikkan langsung ke CSS Variables dan Tailwind secara zero-overhead.",
-          architectureSchema: `[ FIGMA TOKENS JSON ] → [ SYNTHESIS PARSER CLI ]
-                                  ↓
-                         [ AST GENERATOR ]
-                                  ↓
-             ┌────────────────────┼────────────────────┐
-             ↓                    ↓                    ↓
-      [ CSS VARIABLES ]   [ TAILWIND PLUGIN ]   [ SWIFTUI TOKENS ]`,
-          benchmarks: [
-            { metric: "Parse Speed", target: "< 50ms (1k tokens)", achieved: "12ms" },
-            { metric: "Core Output Size", target: "< 10KB", achieved: "4.8KB" },
-            { metric: "Contrast Validation", target: "WCAG AAA 7:1", achieved: "100% Passed" }
-          ],
-          sourceSnippet: `// Material 3 Expressive Curve Parser
-export function compileBezierCurve(tokens) {
-  const { x1, y1, x2, y2 } = tokens.motion.emphasized;
-  return \`cubic-bezier(\${x1}, \${y1}, \${x2}, \${y2})\`;
+          sourceSnippet: `// Evaluasi dan Eksekusi Perhitungan Aritmatika
+function calculateResult(expression) {
+  try {
+    // Sanitasi dan evaluasi ekspresi matematis
+    const sanitized = expression.replace(/[^0-9+\\-*/.]/g, '');
+    const result = Function('"use strict"; return (' + sanitized + ')')();
+    return Number.isFinite(result) ? result : 'Error';
+  } catch (err) {
+    return 'Format Tidak Valid';
+  }
 }`
         }
       }

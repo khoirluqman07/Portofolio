@@ -14,14 +14,14 @@ export function renderSkills(data) {
       </div>
 
       <div class="skills-intro" data-stagger>
-        <h2 class="font-display">Taxonomy of Capabilities</h2>
+        <h2 class="font-display">Fondasi yang Terus Bergerak & Berkembang</h2>
         <p>${skills.description}</p>
       </div>
 
       <div class="skills-matrix-container">
         ${skills.matrixTiers
-          .map(
-            (tier) => `
+      .map(
+        (tier) => `
           <div class="matrix-tier-card" data-stagger>
             <div class="tier-card-header">
               <span class="tier-id">${tier.tierId}</span>
@@ -29,11 +29,12 @@ export function renderSkills(data) {
             </div>
             
             <h3 class="tier-title">${tier.layerName}</h3>
+            ${tier.description ? `<p class="tier-description">${tier.description}</p>` : ''}
 
             <div class="tier-nodes-list">
               ${tier.nodes
-                .map(
-                  (node) => `
+            .map(
+              (node) => `
                 <div class="node-item" data-inspect-skill="${node.name}" data-spec="${node.spec}" data-tier="${tier.layerName}" data-tag="${node.tag}" data-cursor-target>
                   <div class="node-info">
                     <span class="node-name">${node.name}</span>
@@ -42,13 +43,13 @@ export function renderSkills(data) {
                   <span class="node-tag-badge">${node.tag}</span>
                 </div>
               `
-                )
-                .join('')}
+            )
+            .join('')}
             </div>
           </div>
         `
-          )
-          .join('')}
+      )
+      .join('')}
       </div>
     </section>
   `;

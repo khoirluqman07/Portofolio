@@ -408,11 +408,12 @@ class PortfolioApp {
       </div>
 
       <div style="display: flex; gap: var(--space-md); margin-top: var(--space-md);">
+        ${proj.links.preview && proj.links.preview !== proj.links.code ? `
         <a href="${proj.links.preview}" target="_blank" rel="noopener noreferrer" class="project-btn-primary" data-cursor-target>
           <span>Live Deployment</span> <span>↗</span>
-        </a>
+        </a>` : ''}
         <a href="${proj.links.code}" target="_blank" rel="noopener noreferrer" class="project-btn-secondary" data-cursor-target>
-          <span>Repository</span>
+          <span>GitHub Repository</span> <span>↗</span>
         </a>
       </div>
     `;

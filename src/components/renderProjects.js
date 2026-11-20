@@ -8,6 +8,36 @@ export function renderProjects(data) {
 
   const renderBlueprintSvg = (type) => {
     switch (type) {
+      case 'calculator':
+        return `
+          <svg viewBox="0 0 400 400" width="100%" height="100%" fill="none" stroke="currentColor">
+            <rect x="80" y="40" width="240" height="320" rx="14" stroke-width="1.2"/>
+            <rect x="100" y="65" width="200" height="55" rx="6" stroke-width="0.8" stroke-dasharray="3 3"/>
+            <text x="285" y="102" font-family="'JetBrains Mono', monospace" font-size="16" fill="currentColor" text-anchor="end">1,337.00</text>
+            <line x1="100" y1="140" x2="300" y2="140" stroke-width="0.5"/>
+            <!-- Keypad Matrix Grid -->
+            <rect x="100" y="155" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="152" y="155" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="204" y="155" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="256" y="155" width="44" height="34" rx="4" stroke-width="0.75"/>
+            
+            <rect x="100" y="200" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="152" y="200" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="204" y="200" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="256" y="200" width="44" height="34" rx="4" stroke-width="0.75"/>
+
+            <rect x="100" y="245" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="152" y="245" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="204" y="245" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="256" y="245" width="44" height="34" rx="4" stroke-width="0.75"/>
+
+            <rect x="100" y="290" width="94" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="204" y="290" width="42" height="34" rx="4" stroke-width="0.75"/>
+            <rect x="256" y="290" width="44" height="34" rx="4" stroke-width="0.75"/>
+
+            <text x="200" y="348" font-family="'JetBrains Mono', monospace" font-size="8" fill="currentColor" text-anchor="middle">CALC.ENGINE // ARITHMETIC CORE</text>
+          </svg>
+        `;
       case 'topographic':
         return `
           <svg viewBox="0 0 400 400" width="100%" height="100%" fill="none" stroke="currentColor">
@@ -69,14 +99,14 @@ export function renderProjects(data) {
       </div>
 
       <div class="projects-intro" data-stagger>
-        <h2 class="font-display">Curated Engineering Systems</h2>
+        <h2 class="font-display">Jejak Eksplorasi & Implementasi Kode</h2>
         <p>${projects.description}</p>
       </div>
 
       <div class="projects-list">
         ${projects.items
-          .map(
-            (proj) => `
+      .map(
+        (proj) => `
           <article class="project-architectural-card" data-stagger>
             <div class="project-details-panel">
               <div>
@@ -95,21 +125,21 @@ export function renderProjects(data) {
 
                 <ul class="project-deliverables">
                   ${proj.deliverables
-                    .map(
-                      (item) => `
+            .map(
+              (item) => `
                     <li class="deliverable-item">
                       <span class="deliverable-bullet"></span>
                       <span>${item}</span>
                     </li>
                   `
-                    )
-                    .join('')}
+            )
+            .join('')}
                 </ul>
 
                 <div class="project-tags-wrap">
                   ${proj.techStack
-                    .map((tech) => `<span class="project-tech-chip">${tech}</span>`)
-                    .join('')}
+            .map((tech) => `<span class="project-tech-chip">${tech}</span>`)
+            .join('')}
                 </div>
               </div>
 
@@ -136,14 +166,14 @@ export function renderProjects(data) {
 
               <div class="blueprint-telemetry-badge">
                 ${Object.entries(proj.metrics)
-                  .map(([key, val]) => `<span><strong>${key.toUpperCase()}:</strong> ${val}</span>`)
-                  .join('<span style="opacity: 0.4;">|</span>')}
+            .map(([key, val]) => `<span><strong>${key.toUpperCase()}:</strong> ${val}</span>`)
+            .join('<span style="opacity: 0.4;">|</span>')}
               </div>
             </div>
           </article>
         `
-          )
-          .join('')}
+      )
+      .join('')}
       </div>
     </section>
   `;
